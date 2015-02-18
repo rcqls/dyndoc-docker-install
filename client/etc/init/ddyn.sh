@@ -78,6 +78,12 @@ start | restart | stop)
 	fi
 	echo "docker dyndoc: $cmd server!"
 ;;
+upgrade)
+	cd ${DYNDOC_DOCKER_HOME}/.install/dyndoc-docker-install
+	git pull
+	cd ${DYNDOC_DOCKER_HOME}
+	cp -r .install/dyndoc-docker-install/client/etc .
+;;
 R | irb  | gem | ruby) 
 	shift
 	${DOCKER_CMD} exec -ti dyndoc $cmd $*
