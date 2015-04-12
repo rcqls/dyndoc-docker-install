@@ -46,7 +46,7 @@ help)
 	echo "*) ddyn env: environment variables"
 	echo "*) ddyn start|restart|stop: dyndoc docker container management"
 	echo "*) ddyn bash: launch bash shell inside running dyndoc docker container"
-	echo "*) ddyn R|irb|gem: R and ruby management"
+	echo "*) ddyn R|irb|gem|ruby: R and ruby management"
 	echo "*) ddyn <dyn_options> <file>[.dyn]"
 
 ;;
